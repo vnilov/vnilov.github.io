@@ -1,0 +1,9 @@
+.link {
+  text-decoration: underline;
+}
+  .link, .link:hover, .link:active, .link:visited, .link:focus {
+    color: $dark;
+  }
+  .link:hover {
+    text-decoration: none;
+  }

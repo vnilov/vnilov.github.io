@@ -1,0 +1,8 @@
+.container {
+  width: 100%;
+
+  @include media-query(desk) {
+    width: 990px;
+    margin: 0 auto;
+  }
+}

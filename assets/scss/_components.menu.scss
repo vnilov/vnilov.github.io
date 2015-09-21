@@ -1,0 +1,22 @@
+.main-menu {
+  text-align: right;
+
+  &__item {
+    padding: 0 $inuit-base-spacing-unit;
+    border-right: 1px dotted $light;
+
+    & > a {
+      color: $light;
+      border-bottom: 1px solid $light;
+      text-decoration: none;
+    }
+      & > a:hover {
+        border-bottom: none;
+      }
+
+  }
+    &__item:last-child {
+      border-right: none;
+    }
+
+}
