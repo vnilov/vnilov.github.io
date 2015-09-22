@@ -2,5 +2,11 @@
   height: 100%;
   width:  100%;
   color: $dark;
-  padding: $inuit-base-spacing-unit;
+  padding: $inuit-base-spacing-unit 0;
+  @include media-query(lap) {
+    padding: $inuit-base-spacing-unit;
+  }
+  @include media-query(palm) {
+    padding: $inuit-base-spacing-unit--small;
+  }
 }

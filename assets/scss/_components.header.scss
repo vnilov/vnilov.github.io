@@ -4,4 +4,13 @@
   -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
   -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+
+  .hamburger {
+    font-size: 24px;
+    text-align: right;
+
+    @include media-query(lap-and-up) {
+      display: none;
+    }
+  }
 }

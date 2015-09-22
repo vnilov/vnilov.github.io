@@ -11,5 +11,10 @@
     width: 100px;
     border-radius: 50px;
   }
- 
+
+  .flag__img {
+    @include media-query(palm) {
+      display: none;
+    }
+  }
 }
