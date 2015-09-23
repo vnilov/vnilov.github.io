@@ -6,6 +6,7 @@
   -moz-border-radius: 2px;
   border-radius: 2px;
   @include card(1);
+  margin: $inuit-base-spacing-unit auto;
   
   & img {
     width: 100px;

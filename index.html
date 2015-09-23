@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title>Vadim Nilov's homepage</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -14,8 +14,10 @@
 <div class="header">
     <div class="container">
         <div class="layout  layout--middle">
-            <div class="brand  layout__item  u-1/3  u-3/4-palm">
-                Vadim Nilov
+            <div class="layout__item  u-1/3  u-3/4-palm">
+                <div class="brand">
+                    Vadim Nilov
+                </div>
             </div><!--
          --><div class="hamburger  js-hamburger  layout__item  u-1/4-palm"><i class="mdi mdi-menu"></i></div><!--
          --><div class="main-menu  js-main-menu  layout__item  u-2/3  u-1/1-palm">
@@ -47,10 +49,21 @@
             </div>
         </div>
 
-        <div class="" id="workExperience"></div>
+        <div class="accordion" id="workExperience">
+            <div class="year  accordion__header">2015</div>
+            <div class="experience  accordion__body">asd</div>
+            <div class="year  accordion__header">2014</div>
+            <div class="experience  accordion__body">asd</div>
+            <div class="year  accordion__header">2013</div>
+            <div class="experience  accordion__body">asd</div>
+            
+        </div>
     </div>
 </div>
-<script type="application/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="application/javascript" src="/assets/bower_components/jquery/dist/jquery.min.js"></script>
+<script type="application/javascript" src="/assets/bower_components/jquery-ui/ui/minified/core.min.js"></script>
+<script type="application/javascript" src="/assets/bower_components/jquery-ui/ui/minified/widget.min.js"></script>
+<script type="application/javascript" src="/assets/bower_components/jquery-ui/ui/minified/accordion.min.js"></script>
 <script type="application/javascript" src="/assets/js/src/app.js"></script>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

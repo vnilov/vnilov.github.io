@@ -1,0 +1,31 @@
+.#{$inuit-namespace}accordion {
+  width: 100%;
+  margin: double($inuit-base-spacing-unit) auto;
+  
+  &__header {
+    background-color: $light;
+    color: $dark--light;
+    font-size: 3em;
+    @include media-query(palm) {
+      font-size: 2em;
+    }
+    font-weight: bold;
+    padding-left: $inuit-base-spacing-unit;
+    cursor: pointer;
+    outline: none;
+  }
+    &__header:hover, &__header.ui-accordion-header-active  {
+      border-left: 3px solid $dark--light;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -ms-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+    }
+  
+  
+  &__body {
+    
+  }
+  
+}

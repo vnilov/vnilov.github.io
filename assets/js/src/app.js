@@ -12,3 +12,13 @@
             $('.js-main-menu').addClass(activeClass);
         }
     });
+
+    
+
+
+
+
+    /* accordion behaviour */
+    $( "#workExperience" ).accordion({
+        header: '.year'
+    });
