@@ -1,7 +1,7 @@
 .brand {
   font-weight: bold;
   font-size: double($inuit-base-font-size);
-  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+  //text-shadow: 1px 1px 3px rgb(0, 0, 0);
   @include media-query(palm) {
     font-size: 1.5em;
     padding: halve($inuit-base-spacing-unit) $inuit-base-spacing-unit;

@@ -1,0 +1,9 @@
+.footer {
+  background-color: $light;
+  color: $dark--light;
+  padding: $inuit-base-spacing-unit;
+  
+  &__link {
+    text-decoration: none;
+  }
+}

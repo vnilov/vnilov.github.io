@@ -32,17 +32,22 @@
     }
 
     > a, > a:active, > a:visited {
-      padding: halve($inuit-base-spacing-unit) $inuit-base-spacing-unit halve($inuit-base-spacing-unit);
-      border-bottom: $border-weight solid transparent;
+      padding: 14px $inuit-base-spacing-unit 15px;
+      //border-bottom: $border-weight solid transparent;
       color: $light;
       text-decoration: none;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
       @include media-query(palm) {
         border-bottom: none;
       }
     }
       > a:hover {
         color: $light--dark;
-        border-bottom: $border-weight solid $light--dark;
+        //border-bottom: $border-weight solid $light--dark;
         @include media-query(palm) {
           border-bottom: none;
         }
@@ -50,7 +55,13 @@
 
     &:hover, &:focus {
       > a {
-        color: $light--dark;
+        background-color: $light--dark;
+        color: $dark;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
       }
       
       @include media-query(palm) {
