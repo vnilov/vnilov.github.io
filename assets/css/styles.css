@@ -10,6 +10,12 @@
 body {
   font-family: 'Roboto', sans-serif; }
 
+a, a:visited, a:hover, a:focus {
+  color: #00695C; }
+
+h3, h4 {
+  margin-bottom: 0; }
+
 /**
  * Computes a top-shadow for a card effect.
  *
@@ -491,6 +497,9 @@ h6 {
       width: 990px;
       margin: 0 auto; } }
 
+.text--strong {
+  font-weight: 600; }
+
 /*------------------------------------*\
     #FLAG
 \*------------------------------------*/
@@ -636,6 +645,26 @@ h6 {
 .link:hover {
   text-decoration: none; }
 
+ul {
+  list-style-type: none;
+  margin-top: 0; }
+
+.project {
+  padding: 24px 12px;
+  border-bottom: 1px solid #B2DFDB; }
+  .project__name {
+    font-size: 1.2em; }
+  .project__link {
+    color: #004D40;
+    text-decoration: none;
+    border-bottom: 1px solid #004D40; }
+  .project__link:hover {
+    color: #00695C;
+    border-bottom: none; }
+
+.project:last-child {
+  border: none; }
+
 .header {
   background-color: #004D40;
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
@@ -749,7 +778,7 @@ h6 {
     outline: none; }
     @media screen and (max-width: 44.9375em) {
       .accordion__header {
-        font-size: 2em; } }
+        font-size: 1.3em; } }
   .accordion__header:hover, .accordion__header.ui-accordion-header-active {
     border-left: 3px solid #00695C;
     -webkit-transition: all 0.2s;

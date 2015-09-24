@@ -1,0 +1,23 @@
+.#{$inuit-namespace}project {
+  padding: $inuit-base-spacing-unit halve($inuit-base-spacing-unit);
+  border-bottom: 1px solid $light--dark;
+  
+  &__name {
+    font-size: 1.2em;
+  }
+  &__link {
+    color: $dark;
+    text-decoration: none;
+    border-bottom: 1px solid $dark;
+  }
+    &__link:hover {
+      color: $dark--light;
+      border-bottom: none;
+    }
+  &__issue {}
+  &__technologies {}
+  &__example {}
+}
+  .#{$inuit-namespace}project:last-child {
+    border:none;
+  }

@@ -21,3 +21,11 @@ $inuit-base-text-color: $light;
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+a, a:visited, a:hover, a:focus {
+  color: $dark--light;
+}
+
+h3, h4 {
+  margin-bottom: 0;
+}

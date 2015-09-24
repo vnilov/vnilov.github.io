@@ -13,12 +13,17 @@
         }
     });
 
-    
+     
 
 
 
 
     /* accordion behaviour */
     $( "#workExperience" ).accordion({
-        header: '.year'
+        header: '.year',
+        collapsible: true,
+        heightStyle: 'content',
+        activate: function( event, ui) {
+            
+        }
     });

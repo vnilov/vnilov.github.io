@@ -14,12 +14,15 @@
 @import "../bower_components/inuit-page/base.page";
 @import "../bower_components/inuit-headings/base.headings";
 @import "base.containers";
+@import "base.text";
 
 @import "../bower_components/inuit-flag/objects.flag";
 @import "../bower_components/inuit-list-inline/objects.list-inline";
 @import "../bower_components/inuit-layout/objects.layout";
 @import "objects.brand";
 @import "objects.link";
+@import "objects.lists";
+@import "objects.project";
 
 @import "components.header";
 @import "components.menu";

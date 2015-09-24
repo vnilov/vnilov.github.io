@@ -7,7 +7,7 @@
     color: $dark--light;
     font-size: 3em;
     @include media-query(palm) {
-      font-size: 2em;
+      font-size: 1.3em;
     }
     font-weight: bold;
     padding-left: $inuit-base-spacing-unit;
