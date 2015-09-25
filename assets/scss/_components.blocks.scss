@@ -3,6 +3,7 @@
   width:  100%;
   color: $dark;
   padding: $inuit-base-spacing-unit 0;
+  background-color: $light;
   @include media-query(lap) {
     padding: $inuit-base-spacing-unit;
   }

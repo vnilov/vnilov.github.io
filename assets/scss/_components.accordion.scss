@@ -1,6 +1,7 @@
 .#{$inuit-namespace}accordion {
   width: 100%;
   margin: double($inuit-base-spacing-unit) auto;
+  background: white;
   @include card(1);
   
   &__header {
@@ -8,17 +9,18 @@
     color: $dark--light;
     font-size: 3em;
     border-bottom: 1px solid $grey;
+    padding-top:  quarter($inuit-base-spacing-unit);
+    padding-left: quarter($inuit-base-spacing-unit);
     
     @include media-query(palm) {
       font-size: 1.3em;
     }
     font-weight: bold;
-    padding-left: $inuit-base-spacing-unit;
     cursor: pointer;
     outline: none;
   }
     &__header:hover {
-      background-color: $grey;
+      background-color: $light;
     }
     &__header:hover, &__header.ui-accordion-header-active  {
       //border-left: 3px solid $dark--light;
@@ -37,6 +39,11 @@
   &__body {
     padding: 0 $inuit-base-spacing-unit;
     border-bottom: 1px solid $grey;
+    
+    @include media-query(palm) {
+      padding: 0 halve($inuit-base-spacing-unit);
+    }
+    
   }
   
 }

@@ -1,0 +1,8 @@
+.key-skills {
+  color: $dark;
+  padding: $inuit-base-spacing-unit;
+  font-size: 1.5em;
+  @include media-query(palm) {
+    font-size: 1em;
+  }
+}

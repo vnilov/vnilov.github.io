@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-<header class="navbar  navbar-dark bg-inverse  navbar-static-top  bd-navbar  navbar-fixed-top" data-scroll-header>
+<header class="navbar  navbar-dark bg-inverse  navbar-static-top  bd-navbar  navbar-fixed-top  headroom" data-scroll-header>
     <div class="container">
         <div class="clearfix">
             <button class="navbar-toggler pull-right hidden-sm-up" data-target="#bd-main-nav" data-toggle="collapse" type="button"> ☰ </button>

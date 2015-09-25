@@ -1,0 +1,23 @@
+.any-questions {
+  background-color: $neutral;
+  color: $light;
+  min-height: 200px;
+  padding: double($inuit-base-spacing-unit) $inuit-base-spacing-unit;
+  font-size: 1.5em;
+  @include media-query(palm) {
+    font-size: 1em;
+  }
+  
+  ul {
+    padding: $inuit-base-spacing-unit 0;
+  }
+  
+  a {
+    color: $light;
+  }
+  
+  i {
+    padding-right: halve($inuit-base-spacing-unit);
+  }
+  
+}

@@ -14,16 +14,18 @@
 <div class="header">
     <div class="container">
         <div class="layout  layout--middle">
-            <div class="layout__item  u-1/3  u-3/4-palm">
+            <div class="layout__item  u-1/3  u-3/4-palm   u-1/4-lap">
                 <div class="brand">
                     Vadim Nilov
                 </div>
             </div><!--
          --><div class="hamburger  js-hamburger  layout__item  u-1/4-palm"><i class="mdi mdi-menu"></i></div><!--
-         --><div class="main-menu  js-main-menu  layout__item  u-2/3  u-1/1-palm">
+         --><div class="main-menu  js-main-menu  layout__item  u-2/3  u-1/1-palm  u-3/4-lap">
                 <ul class="list-inline">
-                    <li class="main-menu__item"><a href="#aboutMe">About me</a></li>
-                    <li class="main-menu__item"><a href="#workExperience">Work Experience</a></li>
+                    <li class="main-menu__item"><a href="#aboutMe" data-scroll>About me</a></li>
+                    <li class="main-menu__item"><a href="#workExperience" data-scroll>Work Experience</a></li>
+                    <li class="main-menu__item"><a href="#skills" data-scroll>Skills</a></li>
+                    <li class="main-menu__item"><a href="#follow" data-scroll>Follow me</a></li>
                     <li class="main-menu__item"><a href="mailto:nilov.vadim@gmail.com">Hire me</a></li>
                 </ul>
             </div>
@@ -31,78 +33,83 @@
     </div>
 </div>
 
-<div class="main">
+<div class="">
     <div class="container">
         <div class="welcome-word" id="aboutMe">
-            <div class="flag  flag--top">
-                <div class="flag__img">
-                    <img src="images/avatar.jpg">
+                <div class="flag  flag--top">
+                    <div class="flag__img">
+                        <img src="images/avatar.jpg">
+                    </div>
+                    <div class="flag__body">
+                        <p>Hi everyone! You're on my homepage. Let me shortly tell you about myself.</p>
+                        <p>I'm a professional web-developer from Moscow. I have more than 5 years
+                            experience in PHP development. I'm experienced in back-end/front-end developing
+                            applications and solutions for hi-load projects. I know what does OOP mean and practice it in my
+                            projects. I permanently and carefully studying for a modern technologies and methodologies.
+                            I'm disciplined, punctual and self-motivated developer.</p>
+                        <p>I'm ready to relocation offers.</p>
+                        <p>Finally, I'm able to get for a new challenges now.</p>
+            
+                        Here you can
+                        <a href="#workExperience" class="link" data-scroll>read more</a> about my work experience.</div>
                 </div>
-                <div class="flag__body">Hi! You're on my homepage. Let me shortly tell you about myself.<br/>
-                    I'm a professional web-developer from Moscow. I have more than 5 years
-                    experience in PHP development. I'm experienced in back-end/front-end developing
-                    applications and solutions for hi-load projects. I know what does OOP mean and practice it in my
-                    projects. I permanently and carefully studying for a modern technologies and methodologies.
-                    I'm disciplined, punctual and self-motivated developer.
-                    Finally, I'm able to get for a new challenges now.
-                    I'm ready to relocation offers.
-                    Here you can
-                    <a href="#workExperience" class="link">read more</a> about my work experience.</div>
-            </div>
         </div>
+    </div>
+</div>
 
+<div class="main">
+    <div class="container">
         <div class="accordion" id="workExperience">
-            <div class="year  accordion__header">CTC Media</div>
+            <div class="year  accordion__header" id="ctcmedia">CTC Media</div>
             <div class="experience  accordion__body">
                 <h3>July 2014 &mdash; Present</h3>
-                <p>
+                <div>
                     <h4>Responsibilities</h4>
                     <ul class="list-bare">
-                        <li><i class="mdi  mdi-chevron-right"></i>Building and maintenance PHP websites using PHP based frameworks Bitrix, Yii, Symfony</li>
-                        <li><i class="mdi  mdi-chevron-right"></i>Creating cross browser and responsible markup (using Twitter Bootstrap, InuitCSS)</li>
-                        <li><i class="mdi  mdi-chevron-right"></i>Maintaining project schedules and tasks</li>
-                        <li><i class="mdi  mdi-chevron-right"></i>Documenting features, technical specifications and infrastructure requirements.</li>
-                        <li><i class="mdi  mdi-chevron-right"></i>Code refactoring and MySQL optimization</li>
-                        <li><i class="mdi  mdi-chevron-right"></i>Improving back-end infrastructure</li>
-                        <li><i class="mdi  mdi-chevron-right"></i>Building DOS and DDOS protection</li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Building and maintenance PHP websites using PHP based frameworks Bitrix, Yii, Symfony</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Creating cross browser and responsible markup (using Twitter Bootstrap, InuitCSS)</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Maintaining project schedules and tasks</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Documenting features, technical specifications and infrastructure requirements</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Code refactoring and MySQL optimization</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Improving back-end infrastructure</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Building DOS and DDOS protection</div></li>
                     </ul>
-                </p> 
+                </div>
                 <h4>Projects:</h4>
                 <div class="project">
                     <div class="project__name  text--strong">
                         <a href="http://ctclove.ru" target="_blank" rel="nofollow" class="project__link">CTC LOVE</a>
                     </div>
                     <div class="project__issue">
-                        <p>
+                        <div>
                             <div class="text--strong">Issue</div>
                             Creating website for CTC LOVE tv channel.<br/>
-                            Filling:
+                            <div class="u-pt-  text--strong">Site content:</div>
                                 <ul class="list-bare">
-                                    <li><i class="mdi  mdi-chevron-right"></i>adaptive markup</li>
-                                    <li><i class="mdi  mdi-chevron-right"></i>integration with external service for tv programm synchronization</li>
-                                    <li><i class="mdi  mdi-chevron-right"></i>integration with <a href="http://videomore.ru" target="_blank" rel="nofollow">Videomore</a> video service</li>
-                                    <li><i class="mdi  mdi-chevron-right"></i>users authorization</li>
-                                    <li><i class="mdi  mdi-chevron-right"></i>tests service</li>
-                                    <li><i class="mdi  mdi-chevron-right"></i>castings and quiz service</li>
-                                    <li><i class="mdi  mdi-chevron-right"></i>news, ... e.t.c.</li>
+                                    <li><i class="mdi  mdi-chevron-right"></i><div>adaptive markup</div></li>
+                                    <li><i class="mdi  mdi-chevron-right"></i><div>integration with external service for tv programm synchronization</div></li>
+                                    <li><i class="mdi  mdi-chevron-right"></i><div>integration with <a href="http://videomore.ru" target="_blank" rel="nofollow">Videomore</a> video service</div></li>
+                                    <li><i class="mdi  mdi-chevron-right"></i><div>users authorization</div></li>
+                                    <li><i class="mdi  mdi-chevron-right"></i><div>tests service</div></li>
+                                    <li><i class="mdi  mdi-chevron-right"></i><div>castings and quiz service</div></li>
+                                    <li><i class="mdi  mdi-chevron-right"></i><div>news, ... e.t.c.</div></li>
                                 </ul>
-                                
-                        </p>
+                        </div>
                     </div>
                     <div class="project__technologies">
-                        <p>
+                        <div>
                             <div class="text--strong">Technologies</div>
                             <ul class="list-bare">
-                                <li><i class="mdi  mdi-chevron-right"></i>PHP</li>
-                                <li><i class="mdi  mdi-chevron-right"></i>OAuth</li>
-                                <li><i class="mdi  mdi-chevron-right"></i>JavaScript (Jquery, AJAX)</li>
-                                <li><i class="mdi  mdi-chevron-right"></i>Memcache</li>
-                                <li><i class="mdi  mdi-chevron-right"></i>MySQL</li>
-                                <li><i class="mdi  mdi-chevron-right"></i>HTML</li>
-                                <li><i class="mdi  mdi-chevron-right"></i>SASS (SCSS)</li>
-                                <li><i class="mdi  mdi-chevron-right"></i>Twitter Bootstrap</li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>PHP</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>OAuth</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>JavaScript (Jquery, AJAX)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>Memcache</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>MySQL</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>HTML</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>SASS (SCSS)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>Twitter Bootstrap</div></li>
                             </ul>
-                        </p>
+                        </div>
                     </div>
                     <div class="project__example">
                         <p><a href="https://github.com/vnilov/classes/blob/master/VideomoreApi.php" rel="nofollow" target="_blank">code example</a></p>
@@ -113,30 +120,29 @@
                         <a href="http://russo-turisto.ctc.ru" target="_blank" rel="nofollow" class="project__link">RUSSO TURISTO</a>
                     </div>
                     <div class="project__issue">
-                        <p>
-                        <div class="text--strong">Issue</div>
-                        Creating landing page<br/>
-                        Filling:
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>adaptive markup</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>tests service</li>
-                        </ul>
-
-                        </p>
+                        <div>
+                            <div class="text--strong">Issue</div>
+                            Creating landing page<br/>
+                            <div class="u-pt-  text--strong">Site content:</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>adaptive markup</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>tests service</div></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="project__technologies">
-                        <p>
-                        <div class="text--strong">Technologies</div>
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>PHP</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>JavaScript (Jquery, AJAX)</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>Memcache</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>MySQL</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>HTML</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>SASS (SCSS)</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>InuitCSS</li>
-                        </ul>
-                        </p>
+                        <div>
+                            <div class="text--strong">Technologies</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>PHP</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>JavaScript (Jquery, AJAX)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>Memcache</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>MySQL</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>HTML</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>SASS (SCSS)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>InuitCSS</div></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="project__example">
                         <p><a href="https://github.com/vnilov/scss/blob/master/russo-turisto.scss" rel="nofollow" target="_blank">code example</a></p>
@@ -147,31 +153,30 @@
                         <a href="http://k.ctc.ru/" target="_blank" rel="nofollow" class="project__link">SHIP</a>
                     </div>
                     <div class="project__issue">
-                        <p>
-                        <div class="text--strong">Issue</div>
-                        Creating landing page<br/>
-                        Filling:
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>adaptive markup</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>users authorization</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>tests service</li>
-                        </ul>
-
-                        </p>
+                        <div>
+                            <div class="text--strong">Issue</div>
+                            Creating landing page<br/>
+                            <div class="u-pt-  text--strong">Site content:</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>adaptive markup</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>users authorization</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>tests service</div></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="project__technologies">
-                        <p>
-                        <div class="text--strong">Technologies</div>
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>PHP</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>OAuth</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>JavaScript (Jquery, AJAX)</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>MySQL</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>HTML</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>CSS</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>Twitter Bootstrap</li>
-                        </ul>
-                        </p>
+                        <div>
+                            <div class="text--strong">Technologies</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>PHP</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>OAuth</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>JavaScript (Jquery, AJAX)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>MySQL</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>HTML</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>CSS</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>Twitter Bootstrap</div></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="project">
@@ -179,31 +184,30 @@
                         <a href="http://mband.ctclove.ru/" target="_blank" rel="nofollow" class="project__link">MBAND</a>
                     </div>
                     <div class="project__issue">
-                        <p>
-                        <div class="text--strong">Issue</div>
-                        Creating contest page<br/>
-                        Filling:
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>adaptive markup</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>adding form to take part in the contest</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>results listing</li>
-                        </ul>
-
-                        </p>
+                        <div>
+                            <div class="text--strong">Issue</div>
+                            Creating contest page<br/>
+                            <div class="u-pt-  text--strong">Site content:</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>adaptive markup</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>adding form to take part in the contest</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>results listing</div></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="project__technologies">
-                        <p>
-                        <div class="text--strong">Technologies</div>
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>PHP</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>JavaScript (Jquery, AJAX)</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>Masonry (Listing elements) </li>
-                            <li><i class="mdi  mdi-chevron-right"></i>MySQL</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>HTML</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>SASS (SCSS)</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>InuitCSS</li>
-                        </ul>
-                        </p>
+                        <div>
+                            <div class="text--strong">Technologies</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>PHP</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>JavaScript (Jquery, AJAX)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>Masonry (Listing elements)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>MySQL</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>HTML</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>SASS (SCSS)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>InuitCSS</div></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="project">
@@ -211,28 +215,28 @@
                         <a href="http://papabest.ctc.ru/" target="_blank" rel="nofollow" class="project__link">BEST FATHER</a>
                     </div>
                     <div class="project__issue">
-                        <p>
-                        <div class="text--strong">Issue</div>
-                        Creating casting page<br/>
-                        Filling:
-                            <ul class="list-bare">
-                                <li><i class="mdi  mdi-chevron-right"></i>adaptive markup</li>
-                                <li><i class="mdi  mdi-chevron-right"></i>casting form</li>
-                            </ul>
-                        </p>
+                        <div>
+                            <div class="text--strong">Issue</div>
+                            Creating casting page<br/>
+                            <div class="u-pt-  text--strong">Site content:</div>
+                                <ul class="list-bare">
+                                    <li><i class="mdi  mdi-chevron-right"></i><div>adaptive markup</div></li>
+                                    <li><i class="mdi  mdi-chevron-right"></i><div>casting form</div></li>
+                                </ul>
+                        </div>
                     </div>
                     <div class="project__technologies">
-                        <p>
+                        <div>
                             <div class="text--strong">Technologies</div>
                             <ul class="list-bare">
-                                <li><i class="mdi  mdi-chevron-right"></i>PHP</li>
-                                <li><i class="mdi  mdi-chevron-right"></i>JavaScript (Jquery, AJAX)</li>
-                                <li><i class="mdi  mdi-chevron-right"></i>MySQL</li>
-                                <li><i class="mdi  mdi-chevron-right"></i>HTML</li>
-                                <li><i class="mdi  mdi-chevron-right"></i>SASS (SCSS)</li>
-                                <li><i class="mdi  mdi-chevron-right"></i>InuitCSS</li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>PHP</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>JavaScript (Jquery, AJAX)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>MySQL</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>HTML</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>SASS (SCSS)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>InuitCSS</div></li>
                             </ul>
-                        </p>
+                        </div>
                     </div>
                 </div>
                 <div class="project">
@@ -240,26 +244,26 @@
                         <a href="http://2s.ctc.ru/" target="_blank" rel="nofollow" class="project__link">CTC SECOND SCREEN</a>
                     </div>
                     <div class="project__issue">
-                        <p>
-                        <div class="text--strong">Issue</div>
-                        Creating landing page<br/>
-                        Filling:
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>adaptive markup</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>light animations</li>
-                        </ul>
-                        </p>
+                        <div>
+                            <div class="text--strong">Issue</div>
+                            Creating landing page<br/>
+                            <div class="u-pt-  text--strong">Site content:</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>adaptive markup</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>light animations</div></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="project__technologies">
-                        <p>
-                        <div class="text--strong">Technologies</div>
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>JavaScript (Jquery, AJAX)</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>HTML</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>SASS (SCSS)</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>InuitCSS</li>
-                        </ul>
-                        </p>
+                        <div>
+                            <div class="text--strong">Technologies</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>JavaScript (Jquery, AJAX)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>HTML</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>SASS (SCSS)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>InuitCSS</div></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="project">
@@ -267,27 +271,27 @@
                         <a href="http://catalog.ctc.ru/" target="_blank" rel="nofollow" class="project__link">GOODS CATALOG</a>
                     </div>
                     <div class="project__issue">
-                        <p>
-                        <div class="text--strong">Issue</div>
-                        Creating products catalog<br/>
-                        Filling:
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>products listing</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>product card</li>
-                        </ul>
-                        </p>
+                        <div>
+                            <div class="text--strong">Issue</div>
+                            Creating products catalog<br/>
+                            <div class="u-pt-  text--strong">Site content:</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>products listing</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>product card</div></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="project__technologies">
-                        <p>
-                        <div class="text--strong">Technologies</div>
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>Memcache</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>JavaScript (Jquery, AJAX)</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>HTML</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>SASS (SCSS)</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>InuitCSS</li>
-                        </ul>
-                        </p>
+                        <div>
+                            <div class="text--strong">Technologies</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>Memcache</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>JavaScript (Jquery, AJAX)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>HTML</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>SASS (SCSS)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>InuitCSS</div></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="project">
@@ -295,32 +299,32 @@
                         <a href="http://old.ctc.ru/" target="_blank" rel="nofollow" class="project__link">CTC [previous version] </a>
                     </div>
                     <div class="project__issue">
-                        <p>
+                        <div>
                             <div class="text--strong">Issue</div>
                             Maintance project<br/>
-                            Filling:
+                            <div class="u-pt-  text--strong">Site content:</div>
                             <ul class="list-bare">
-                                <li><i class="mdi  mdi-chevron-right"></i>integration with external service for tv programm synchronization</li>
-                                <li><i class="mdi  mdi-chevron-right"></i>integration with <a href="http://videomore.ru" target="_blank" rel="nofollow">Videomore</a> video service</li>
-                                <li><i class="mdi  mdi-chevron-right"></i>tv projects module</li>
-                                <li><i class="mdi  mdi-chevron-right"></i>tests service</li>
-                                <li><i class="mdi  mdi-chevron-right"></i>castings and quiz service</li>
-                                <li><i class="mdi  mdi-chevron-right"></i>news module, ... e.t.c.</li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>integration with external service for tv programm synchronization</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>integration with <a href="http://videomore.ru" target="_blank" rel="nofollow">Videomore</a> video service</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>tv projects module</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>tests service</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>castings and quiz service</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>news module, ... e.t.c.</div></li>
                             </ul>
-                        </p>
+                        </div>
                     </div>
                     <div class="project__technologies">
-                        <p>
-                        <div class="text--strong">Technologies</div>
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>Memcache</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>JavaScript (Jquery, AJAX, AngularJS)</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>PHP</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>HTML</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>LESS</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>Twitter Bootstrap</li>
-                        </ul>
-                        </p>
+                        <div>
+                            <div class="text--strong">Technologies</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>Memcache</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>JavaScript (Jquery, AJAX, AngularJS)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>PHP</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>HTML</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>LESS</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>Twitter Bootstrap</div></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="project__example">
                         <p><a href="https://github.com/vnilov/classes/blob/master/UnisenderAPI.php" rel="nofollow" target="_blank">code example</a></p>
@@ -328,53 +332,53 @@
                     </div>
                 </div>
             </div>
-            <div class="year  accordion__header">Rambler & Co</div>
+            <div class="year  accordion__header" id="rambler">Rambler & Co</div>
             <div class="experience  accordion__body">
                 <h3>August 2012 &mdash; June 2014</h3>
-                <p>
-                <h4>Responsibilities</h4>
-                <ul class="list-bare">
-                    <li><i class="mdi  mdi-chevron-right"></i>Building PHP website using PHP based framework <a href="http://www.bitrixsoft.com" rel="nofollow" target="_blank">Bitrix</a></li>
-                    <li><i class="mdi  mdi-chevron-right"></i>Building and editing framework modules</li>
-                    <li><i class="mdi  mdi-chevron-right"></i>Web Services Integration ( Tvigle, 2GIS )</li>
-                    <li><i class="mdi  mdi-chevron-right"></i>Creating cross browser layouts</li>
-                    <li><i class="mdi  mdi-chevron-right"></i>Working with project managers and other team members</li>
-                    <li><i class="mdi  mdi-chevron-right"></i>Maintaining project schedules and tasks</li>
-                    <li><i class="mdi  mdi-chevron-right"></i>Documenting features, technical specifications and infrastructure requirements</li>
-                </ul>
-                </p>
+                <div>
+                    <h4>Responsibilities</h4>
+                    <ul class="list-bare">
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Building PHP website using PHP based framework <a href="http://www.bitrixsoft.com" rel="nofollow" target="_blank">Bitrix</a></div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Building and editing framework modules</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Web Services Integration ( Tvigle, 2GIS )</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Creating cross browser layouts</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Working with project managers and other team member</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Maintaining project schedules and tasks</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Documenting features, technical specifications and infrastructure requirements</div></li>
+                    </ul>
+                </div>
                 <h4>Projects</h4>
                 <div class="project">
                     <div class="project__name  text--strong">
                         <a href="http://letidor.ru/" target="_blank" rel="nofollow" class="project__link">LETIDOR</a>
                     </div>
                     <div class="project__issue">
-                        <p>
-                        <div class="text--strong">Issue</div>
-                        Maintance project and improvement project<br/>
-                        Filling:
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>articles</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>tests module</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>integration with <a href="http://www.tvigle.ru/" rel="nofollow" target="_blank">TVIGLE</a> video service</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>forum</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>auction</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>pregnancy calendar, ... e.t.c.</li>
-                        </ul>
-                        </p>
+                        <div>
+                            <div class="text--strong">Issue</div>
+                            Maintance project and improvement project<br/>
+                            <div class="u-pt-  text--strong">Site content:</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>articles</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>tests module</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>integration with <a href="http://www.tvigle.ru/" rel="nofollow" target="_blank">TVIGLE</a> video service</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>forum</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>auction</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>pregnancy calendar, ... e.t.c.</div></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="project__technologies">
-                        <p>
-                        <div class="text--strong">Technologies</div>
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>Memcache</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>JavaScript (Jquery, AJAX)</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>PHP</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>HTML</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>CSS</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>OAuth</li>
-                        </ul>
-                        </p>
+                        <div>
+                            <div class="text--strong">Technologies</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>Memcache</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>JavaScript (Jquery, AJAX)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>PHP</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>HTML</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>CSS</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>OAuth</div></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="project__example">
                         <p><a href="https://github.com/vnilov/classes/blob/master/CTradeUnit.php" rel="nofollow" target="_blank">code example</a></p>
@@ -385,28 +389,28 @@
                         <a href="http://letidor.ru/moya-semya/" target="_blank" rel="nofollow" class="project__link">MY FAMILY</a>
                     </div>
                     <div class="project__issue">
-                        <p>
-                        <div class="text--strong">Issue</div>
-                        Creating promo project<br/>
-                        Filling:
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>user contests</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>articles</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>consultation section</li>
-                        </ul>
-                        </p>
+                        <div>
+                            <div class="text--strong">Issue</div>
+                            Creating promo project<br/>
+                            <div class="u-pt-  text--strong">Site content:</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>user contests</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>articles</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>consultation section</div></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="project__technologies">
-                        <p>
-                        <div class="text--strong">Technologies</div>
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>Memcache</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>JavaScript (Jquery, AJAX)</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>PHP</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>HTML</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>CSS</li>
-                        </ul>
-                        </p>
+                        <div>
+                            <div class="text--strong">Technologies</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>Memcache</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>JavaScript (Jquery, AJAX)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>PHP</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>HTML</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>CSS</div></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="project">
@@ -414,128 +418,169 @@
                         <a href="http://letidor.ru/polaroid/" target="_blank" rel="nofollow" class="project__link">POLAROID</a>
                     </div>
                     <div class="project__issue">
-                        <p>
-                        <div class="text--strong">Issue</div>
-                        Creating promo project<br/>
-                        Filling:
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>user contests</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>promo materials</li>
-                        </ul>
-                        </p>
+                        <div>
+                            <div class="text--strong">Issue</div>
+                            Creating promo project<br/>
+                            <div class="u-pt-  text--strong">Site content:</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>user contests</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>promo materials</div></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="project__technologies">
-                        <p>
-                        <div class="text--strong">Technologies</div>
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>Memcache</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>JavaScript (Jquery, AJAX)</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>PHP</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>HTML</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>CSS</li>
-                        </ul>
-                        </p>
+                        <div>
+                            <div class="text--strong">Technologies</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>Memcache</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>JavaScript (Jquery, AJAX)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>PHP</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>HTML</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>CSS</div></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="year  accordion__header">Signal corps, Russian Army</div>
+            <div class="year  accordion__header" id="army">Signal corps, Russian Army</div>
             <div class="experience  accordion__body">
                 <h3> July 2011 – July 2012</h3>
                 <h4>Military rank:&nbsp;Lance-sergeant</h4>
-                <p>
+                <div>
                     <h4>Responsibilities</h4>
                     <i class="mdi mdi-satellite-variant"></i>Top Secret
-                </p>
+                </div>
             </div>
-            <div class="year  accordion__header">Markin Production</div>
+            <div class="year  accordion__header" id="markin">Markin Production</div>
             <div class="experience  accordion__body">
                 <h3>March 2009 &mdash; June 2011</h3>
-                <p>
-                <h4>Responsibilities</h4>
-                <ul class="list-bare">
-                    <li><i class="mdi  mdi-chevron-right"></i>Building PHP website</li>
-                    <li><i class="mdi  mdi-chevron-right"></i>Building and editing framework modules</li>
-                    <li><i class="mdi  mdi-chevron-right"></i>Maintaining project schedules and tasks</li>
-                </ul>
-                </p>
+                <div>
+                    <h4>Responsibilities</h4>
+                    <ul class="list-bare">
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Building PHP website</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Building and editing framework modules</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Maintaining project schedules and tasks</div></li>
+                    </ul>
+                </div>
                 <h4>Projects</h4>
                 <div class="project">
                     <div class="project__name  text--strong">
                         <a href="http://markin.ru" target="_blank" rel="nofollow" class="project__link">MARKIN.RU</a>
                     </div>
                     <div class="project__issue">
-                        <p>
-                        <div class="text--strong">Issue</div>
-                        Creating and maintance project<br/>
-                        Filling:
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>user authorization</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>users page
-                                <ul>
-                                    <li>u2u messages</li>
-                                    <li>profile page</li>
-                                    <li>achievement page</li>
-                                </ul>
-                            </li>
-                            <li>forums</li>
-                            <li>market</li>
-                        </ul>
-                        </p>
+                        <div>
+                            <div class="text--strong">Issue</div>
+                            Creating and maintance project<br/>
+                            <div class="u-pt-  text--strong">Site content:</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>user authorization</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>users page</div>
+                                    <ul>
+                                        <li><i class="mdi  mdi-chevron-double-right"></i><div>u2u messages</div></li>
+                                        <li><i class="mdi  mdi-chevron-double-right"></i><div>profile page</div></li>
+                                        <li><i class="mdi  mdi-chevron-double-right"></i><div>achievement page</div></li>
+                                    </ul>
+                                </li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>forums</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>market</div></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="project__technologies">
-                        <p>
-                        <div class="text--strong">Technologies</div>
-                        <ul class="list-bare">
-                            <li><i class="mdi  mdi-chevron-right"></i>Memcache</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>JavaScript (Jquery, AJAX)</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>PHP</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>HTML</li>
-                            <li><i class="mdi  mdi-chevron-right"></i>CSS</li>
-                        </ul>
-                        </p>
+                        <div>
+                            <div class="text--strong">Technologies</div>
+                            <ul class="list-bare">
+                                <li><i class="mdi  mdi-chevron-right"></i><div>Memcache</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>JavaScript (Jquery, AJAX)</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>PHP</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>HTML</div></li>
+                                <li><i class="mdi  mdi-chevron-right"></i><div>CSS</div></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="year  accordion__header">QSoft</div>
+            <div class="year  accordion__header" id="qsoft">QSoft</div>
             <div class="experience  accordion__body">
                 <h3>September 2008 &mdash; January 2009</h3>
-                <p>
-                <h4>Responsibilities</h4>
-                <ul class="list-bare">
-                    <li><i class="mdi  mdi-chevron-right"></i>Building PHP websites</li>
-                    <li><i class="mdi  mdi-chevron-right"></i>Building and editing framework components and other PHP scripts. </li>
-                </ul>
-                </p>
+                <div>
+                    <h4>Responsibilities</h4>
+                    <ul class="list-bare">
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Building PHP websites</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Building and editing framework components and other PHP scripts</div></li>
+                    </ul>
+                </div>
                 <h4>Participated in projects:</h4>
                 <ul class="list-bare">
-                    <li><i class="mdi  mdi-chevron-right"></i><a href="http://svyaznoy.ru" rel="nofollow" target="_blank">Svyaznoy</a></li>
-                    <li><i class="mdi  mdi-chevron-right"></i><a href="http://eldorado.ru" rel="nofollow" target="_blank">Eldorado</a></li>
+                    <li><i class="mdi  mdi-chevron-right"></i><div><a href="http://svyaznoy.ru" rel="nofollow" target="_blank">Svyaznoy</a></div></li>
+                    <li><i class="mdi  mdi-chevron-right"></i><div><a href="http://eldorado.ru" rel="nofollow" target="_blank">Eldorado</a></div></li>
                 </ul>
             </div>
             <div class="year  accordion__header">Education</div>
             <div class="experience  accordion__body">
                 <h3> September 2005 &mdash; January 2011</h3>
-                <p>
+                <div>
                     <h4><a href="http://en.msiu.ru" target="_blank" rel="nofollow" class="project__link">Moscow State Industrial University</a></h4>
-                </p>
-                <p>
+                </div>
+                <div>
                     <div class="u-mb"><span class="text--strong ">Specialization:</span>&nbsp;Information Theory and Computer Engineering</div>
                     <div class="text--strong">
                     Completed computer science courses
                     </div>
                     <ul class="list-bare">
-                        <li><i class="mdi  mdi-chevron-right"></i>Linux</li>
-                        <li><i class="mdi  mdi-chevron-right"></i>Ruby</li>
-                        <li><i class="mdi  mdi-chevron-right"></i>Java</li>
-                        <li><i class="mdi  mdi-chevron-right"></i>C</li>
-                        <li><i class="mdi  mdi-chevron-right"></i>Assembler</li>
-                        <li><i class="mdi  mdi-chevron-right"></i>PHP</li>
-                        <li><i class="mdi  mdi-chevron-right"></i>Haskell</li>
-                        <li><i class="mdi  mdi-chevron-right"></i>Cyber security</li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Linux</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Ruby</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Java</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>C</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Assembler</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>PHP</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Haskell</div></li>
+                        <li><i class="mdi  mdi-chevron-right"></i><div>Cyber security</div></li>
                     </ul>
-                </p>
+                </div>
             </div>
         </div>
+    </div>
+</div>
+<div class="key-skills" id="skills">
+    <div class="container">
+        <h1>KEY SKILLS</h1>
+        <p>
+            <span class="text--strong">Computer Languages: </span>
+            Proficient with PHP(OOP) and SQL(MySQL, PostgreSQL). Familiar with С, C++, Java and Ruby.
+        </p>
+        <p>
+            <span class="text--strong">Web Development: </span>
+            Proficient with PHP, HTML, JavaScript (particular jQuery, AndulrJS), SASS, CSS and XML. Familiar with nodeJS and noSQL.
+        </p>
+        <p>
+            <span class="text--strong">Frameworks and CMS: </span>
+            Proficient with Bitrix. Familiar with <span class="text--strong">Yii, Symfony, Symfony2</span>, Joomla, WordPress, Ruby on Rails.
+        </p>
+        <p>
+            <span class="text--strong">Operating Systems: </span>
+            Proficient with Linux, particularly Linux Mint, Fedora, Ubuntu. Familiar with FreeBSD.
+        </p>
+        <p>
+            <span class="text--strong">Application Software:</span>
+            Proficient with NGINX, Apache, Git. Familiar with Memcache.
+        </p>
+        <p>
+            <span class="text--strong">Other skills:</span>
+            Proficient with Open Office and Miscrosoft Office. Familiar with Google Analytics and Yandex Metrics.
+        </p>
+    </div>
+</div>
+<div class="any-questions" id="follow">
+    <div class="container">
+        If you have any questions &mdash; just ask me!
+        <ul>
+            <li><i class="mdi  mdi-email"></i><div><a href="mailto:nilov.vadim@gmail.com">mail</a> me</div></li>
+            <li><i class="mdi  mdi-skype"></i><div>write or call me: v_nilov</div></li>
+            <li><i class="mdi  mdi-github-circle"></i><div>fork me on <a href="https://github.com/vnilov" target="_blank">GitHub</a></div></li>
+            <li><i class="mdi  mdi-stackoverflow"></i><div>my CV on <a href="http://careers.stackoverflow.com/cv/employer/290222" target="_blank">StackOverFlow</a></div></li>
+            <li><i class="mdi  mdi-facebook-box"></i><div>follow me on <a href="http://facebook.com/nilov.vadim" target="_blank">Facebook</a></div></li>
+        </ul>
     </div>
 </div>
 <div class="footer">
@@ -552,6 +597,9 @@
 <script type="application/javascript" src="/assets/bower_components/jquery-ui/ui/minified/core.min.js"></script>
 <script type="application/javascript" src="/assets/bower_components/jquery-ui/ui/minified/widget.min.js"></script>
 <script type="application/javascript" src="/assets/bower_components/jquery-ui/ui/minified/accordion.min.js"></script>
+<script type="application/javascript" src="/assets/js/vendor/smooth-scroll.min.js"></script>
+<script type="application/javascript" src="/assets/bower_components/headroom.js/dist/headroom.min.js"></script>
+<script type="application/javascript" src="/assets/bower_components/headroom.js/dist/jQuery.headroom.min.js"></script>
 <script type="application/javascript" src="/assets/js/src/app.js"></script>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

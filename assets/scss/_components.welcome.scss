@@ -1,12 +1,20 @@
 .welcome-word {
   //border: 1px solid $dark--light;
-  padding: $inuit-base-spacing-unit--small;
-  background-color: $light--dark;
+  font-size: 1.5em;
+  @include media-query(palm) {
+    font-size: 1em;
+  }
+  padding: 90px $inuit-base-spacing-unit--small $inuit-base-spacing-unit--small;
+  //background-color: $light--dark;
+  color: $dark;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  @include card(1);
-  margin: $inuit-base-spacing-unit auto;
+  //@include card(1);
+  margin: 0 auto $inuit-base-spacing-unit;
+  @include media-query(palm) {
+    padding-top: 70px;
+  }
   
   & img {
     width: 100px;
@@ -17,5 +25,8 @@
     @include media-query(palm) {
       display: none;
     }
+  }
+  p:nth-of-type(1){
+    margin-top: 0;
   }
 }

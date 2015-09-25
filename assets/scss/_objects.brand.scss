@@ -1,9 +1,15 @@
 .brand {
   font-weight: bold;
   font-size: double($inuit-base-font-size);
+  padding-left: $inuit-base-spacing-unit;
   //text-shadow: 1px 1px 3px rgb(0, 0, 0);
   @include media-query(palm) {
     font-size: 1.5em;
     padding: halve($inuit-base-spacing-unit) $inuit-base-spacing-unit;
+  }
+  @include media-query(lap) {
+    font-size: 1.2em;
+    font-size: 1.59em;
+    padding: quarter($inuit-base-spacing-unit) 0px quarter($inuit-base-spacing-unit) $inuit-base-spacing-unit;
   }
 }

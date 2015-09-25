@@ -1,5 +1,6 @@
 /* COLORS */
 $dark:        #004D40;
+$dark--middle:#00695c;
 $dark--light: #00695C;
 $neutral:     #009688;
 $light:       #E0F2F1;
@@ -27,6 +28,3 @@ a, a:visited, a:hover, a:focus {
   color: $dark--light;
 }
 
-h3, h4 {
-  margin-bottom: 0;
-}

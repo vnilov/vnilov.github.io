@@ -4,13 +4,44 @@
   -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
   -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
   .hamburger {
     font-size: 24px;
     text-align: center;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
 
     @include media-query(lap-and-up) {
       display: none;
     }
+    
+    > i {
+      -webkit-transition: all 0.25s;
+      -moz-transition: all 0.25s;
+      -ms-transition: all 0.25s;
+      -o-transition: all 0.25s;
+      transition: all 0.25s;
+    }
   }
+    .hamburger--active {
+      > i {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        -webkit-transition: all 0.25s;
+        -moz-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        -o-transition: all 0.25s;
+        transition: all 0.25s;
+      }
+    }
+  
 }

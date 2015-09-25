@@ -1,7 +1,13 @@
 ul {
   list-style-type: none;
   margin-top: 0;
-  > li {  }
+  
+  @include media-query(palm) {
+    padding-left: halve($inuit-base-spacing-unit);
+  }
+  
+  > li > div, > li > i.mdi
+  { display: table-cell }
 
   > li:before {
 

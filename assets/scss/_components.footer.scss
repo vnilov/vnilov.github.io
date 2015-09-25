@@ -1,9 +1,10 @@
 .footer {
-  background-color: $light;
-  color: $dark--light;
+  background-color: $dark--light;
+  color: $light;
   padding: $inuit-base-spacing-unit;
   
-  &__link {
+  &__link, &__link:visited, &__link:hover  {
     text-decoration: none;
+    color: $light;
   }
 }

@@ -1,9 +1,13 @@
 .#{$inuit-namespace}project {
   padding: $inuit-base-spacing-unit halve($inuit-base-spacing-unit);
   border-bottom: 1px solid $light--dark;
+  @include media-query(palm) {
+    padding: halve($inuit-base-spacing-unit);
+  }
   
   &__name {
     font-size: 1.2em;
+    padding-bottom: halve($inuit-base-spacing-unit);
   }
   &__link {
     color: $dark;
