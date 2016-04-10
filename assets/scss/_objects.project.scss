@@ -1,13 +1,31 @@
 .#{$inuit-namespace}project {
-  padding: $inuit-base-spacing-unit halve($inuit-base-spacing-unit);
-  border-bottom: 1px solid $light--dark;
+  padding: 0 halve($inuit-base-spacing-unit);
+  //border-bottom: 1px solid $light--dark;
   @include media-query(palm) {
     padding: halve($inuit-base-spacing-unit);
   }
   
   &__name {
     font-size: 1.2em;
-    padding-bottom: halve($inuit-base-spacing-unit);
+    padding: halve($inuit-base-spacing-unit);
+    
+    outline: none;
+    cursor: pointer;
+
+    > span {
+      border-bottom: 1px dotted;
+    }
+
+    &.ui-accordion-header-active {
+      background-color: $light--dark;
+    }
+  }
+  &__content {
+    padding: halve($inuit-base-spacing-unit);
+    background-color: $light;
+    &.ui-accordion-content-active {
+      border-bottom: 1px solid $light;
+    }
   }
   &__link {
     color: $dark;

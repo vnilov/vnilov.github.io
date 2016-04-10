@@ -1,5 +1,9 @@
-h3, h4 {
+h3 {
   margin-bottom: 0;
+}
+
+h4 {
+  margin-bottom: halve($inuit-base-line-height);
 }
 
 h3 {

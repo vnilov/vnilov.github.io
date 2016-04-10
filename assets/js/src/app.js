@@ -64,7 +64,13 @@ $(function(){
             }
         }
     });
-    
+
+    $( ".experience" ).accordion({
+        header: '.project__name',
+        collapsible: true,
+        heightStyle: 'content'
+    });
+
     
     /* headroom */
     $(".header").headroom({
