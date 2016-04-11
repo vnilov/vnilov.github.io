@@ -7,11 +7,14 @@
 
     <meta name="keywords" content="Нилов Вадим, Nilov Vadim, PHP developer, PHP, backend, backend developer, frontend, frontend developer" />
     <meta name="description" content="Personal site of Nilov Vadim, php developer" />
-    <?php if ($_GET["grey"]=="y") print_r($_SERVER);?>
     <title>Vadim Nilov's homepage</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <?php if ($_SERVER['HTTP_HOST'] == 'lookover.me'):?>
+        <link rel="stylesheet" href="assets/css/styles_grey.css">
+    <?php else: ?>
+        <link rel="stylesheet" href="assets/css/styles.css">
+    <?php endif;?>
 </head>
 <body class="background--main">
 <div class="header">
