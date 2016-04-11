@@ -1,0 +1,30 @@
+/* COLORS */
+$dark:        #263238;
+$dark--middle:#37474F;
+$dark--light: #37474F;
+$neutral:     #607D8B;
+$light:       #ECEFF1;
+$light--dark: #CFD8DC;
+$grey:        #E0E0E0;
+
+
+
+
+  /* INUIT VARIABLES */
+$inuit-base-text-color: white;
+
+
+
+
+
+
+/* FONTS */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a, a:visited, a:hover, a:focus {
+  color: $dark--light;
+}
+
