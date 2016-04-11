@@ -7,7 +7,7 @@
 
     <meta name="keywords" content="Нилов Вадим, Nilov Vadim, PHP developer, PHP, backend, backend developer, frontend, frontend developer" />
     <meta name="description" content="Personal site of Nilov Vadim, php developer" />
-    <?print_r($_SERVER);?>
+    <?php print_r($_SERVER);?>
     <title>Vadim Nilov's homepage</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
