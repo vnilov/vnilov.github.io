@@ -43,12 +43,12 @@ $(function(){
         heightStyle: 'content',
         icons: { "header": "mdi mdi-arrow-right", "activeHeader": "mdi mdi-arrow-down" },
         activate: function( event, ui) {
-            var id = $('.ui-accordion-header-active').attr('id');
+            var id = $('.year.ui-accordion-header-active').attr('id');
             
             if (id != undefined) {
                 smoothScroll.animateScroll(
                     null,
-                    '#' + $('.ui-accordion-header-active').attr('id'),
+                    '#' + $('.year.ui-accordion-header-active').attr('id'),
                     {    
                         callback: function ( toggle, anchor ) {
                             setTimeout( function() {
