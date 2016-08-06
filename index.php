@@ -694,7 +694,7 @@
                     <li><i class="mdi  mdi-chevron-right"></i><div><a href="http://eldorado.ru" rel="nofollow" target="_blank">Eldorado</a></div></li>
                 </ul>
             </div>
-            <div class="year  accordion__header">Education</div>
+            <div class="year  accordion__header" id="education">Education</div>
             <div class="experience  accordion__body">
                 <h3> September 2005 &mdash; January 2011</h3>
                 <div>
