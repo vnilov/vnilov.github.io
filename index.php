@@ -767,7 +767,7 @@
         <div class="layout  layout--middle">
             <div class="layout__item  u-2/3">&copy 2015 Nilov Vadim</div><!--
           --><div class="layout__item  u-1/3  text--right">
-                <a href="/files/CV_VNilov.pdf" class="footer__link">My CV</a>
+                <a href="/files/CV_VNilov_July2016.pdf" class="footer__link">My CV</a>
             </div>
         </div>
     </div>
