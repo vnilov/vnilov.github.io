@@ -28,10 +28,10 @@ Vadim Nilov
          --><div class="hamburger  js-hamburger  layout__item  u-1/4-palm"><i class="mdi mdi-menu"></i></div><!--
          --><div class="main-menu  js-main-menu  layout__item  u-3/4  u-1/1-palm  u-3/4-lap">
                 <ul class="list-inline">
-                    <li class="main-menu__item"><a href="#aboutMe" data-scroll>About me</a></li>
-                    <li class="main-menu__item"><a href="#workExperience" data-scroll>Work Experience</a></li>
-                    <li class="main-menu__item"><a href="#skills" data-scroll>Skills</a></li>
-                    <li class="main-menu__item"><a href="#follow" data-scroll>Follow me</a></li>
+                    <li class="main-menu__item"><a href="/#aboutMe" data-scroll>About me</a></li>
+                    <li class="main-menu__item"><a href="/#workExperience" data-scroll>Work Experience</a></li>
+                    <li class="main-menu__item"><a href="/#skills" data-scroll>Skills</a></li>
+                    <li class="main-menu__item"><a href="/#follow" data-scroll>Follow me</a></li>
                     <li class="main-menu__item"><a href="mailto:nilov.vadim@gmail.com">Hire me</a></li>
                     <li class="main-menu__item"><a href="/sandbox">Sandbox</a></li>
                 </ul>
