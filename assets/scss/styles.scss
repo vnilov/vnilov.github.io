@@ -7,6 +7,7 @@
 @import "../bower_components/inuit-responsive-tools/tools.responsive";
 @import "../bower_components/inuit-tools-widths/tools.widths";
 @import "tools.material-shadows";
+@import "tools.visibility";
 
 @import "../bower_components/inuit-normalize/generic.normalize";
 @import "../bower_components/inuit-box-sizing/generic.box-sizing";
@@ -34,7 +35,8 @@
 @import "components.any-questions";
 @import "components.footer";
 @import "components.headroom";
-
+@import "components.form";
+@import "components.console";
 
 @import "../bower_components/inuit-widths/trumps.widths";
 @import "../bower_components/inuit-widths-responsive/trumps.widths-responsive";

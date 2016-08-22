@@ -10,6 +10,7 @@
     <title>Vadim Nilov's homepage</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/assets/css/materialdesignicons.min.css">
+    <script type="application/javascript" src="/assets/bower_components/jquery/dist/jquery.min.js"></script>
     <?php if ($_SERVER['HTTP_HOST'] == 'lookover.me'):?>
         <link rel="stylesheet" href="/assets/css/styles_grey.css">
     <?php else: ?>
@@ -40,4 +41,3 @@ Vadim Nilov
     </div>
 </div>
 <div class="">
-    <div class="container">

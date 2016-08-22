@@ -31,47 +31,50 @@ $(function(){
     
 
     
+    if (window.location.pathname == "/") {
 
-    /* smooth scroll */
-    smoothScroll.init({});
+        /* smooth scroll */
+        smoothScroll.init({});
 
+        /* accordion behaviour */
+        $("#workExperience").accordion({
+            header: '.year',
+            collapsible: true,
+            heightStyle: 'content',
+            icons: {
+                "header": "mdi mdi-arrow-right",
+                "activeHeader": "mdi mdi-arrow-down"
+            },
+            activate: function (event, ui) {
+                var id = $('.year.ui-accordion-header-active').attr('id');
 
-    /* accordion behaviour */
-    $( "#workExperience" ).accordion({
-        header: '.year',
-        collapsible: true,
-        heightStyle: 'content',
-        icons: { "header": "mdi mdi-arrow-right", "activeHeader": "mdi mdi-arrow-down" },
-        activate: function( event, ui) {
-            var id = $('.year.ui-accordion-header-active').attr('id');
-            
-            if (id != undefined) {
-                smoothScroll.animateScroll(
-                    null,
-                    '#' + $('.year.ui-accordion-header-active').attr('id'),
-                    {    
-                        callback: function ( toggle, anchor ) {
-                            setTimeout( function() {
-                                if ($('.header').hasClass('headroom--pinned')){
-                                    $('.header').removeClass('headroom--pinned');
-                                    $('.header').addClass('headroom--unpinned');
-                                }
-                                //console.log("remove menu");
-                            }, 200);
+                if (id != undefined) {
+                    smoothScroll.animateScroll(
+                        null,
+                        '#' + $('.year.ui-accordion-header-active').attr('id'),
+                        {
+                            callback: function (toggle, anchor) {
+                                setTimeout(function () {
+                                    if ($('.header').hasClass('headroom--pinned')) {
+                                        $('.header').removeClass('headroom--pinned');
+                                        $('.header').addClass('headroom--unpinned');
+                                    }
+                                    //console.log("remove menu");
+                                }, 200);
+                            }
                         }
-                    }
-                );
+                    );
+                }
             }
-        }
-    });
+        });
 
-    $( ".experience" ).accordion({
-        header: '.project__name',
-        collapsible: true,
-        heightStyle: 'content'
-    });
+        $(".experience").accordion({
+            header: '.project__name',
+            collapsible: true,
+            heightStyle: 'content'
+        });
 
-    
+    }
     /* headroom */
     $(".header").headroom({
        

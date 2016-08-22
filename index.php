@@ -1,44 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-    <meta name="keywords" content="Нилов Вадим, Nilov Vadim, PHP developer, PHP, backend, backend developer, frontend, frontend developer" />
-    <meta name="description" content="Personal site of Nilov Vadim, php developer" />
-    <title>Vadim Nilov's homepage</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
-    <?php if ($_SERVER['HTTP_HOST'] == 'lookover.me'):?>
-        <link rel="stylesheet" href="assets/css/styles_grey.css">
-    <?php else: ?>
-        <link rel="stylesheet" href="assets/css/styles.css">
-    <?php endif;?>
-</head>
-<body class="background--main">
-<div class="header">
-    <div class="container">
-        <div class="layout  layout--middle">
-            <div class="layout__item  u-1/3  u-3/4-palm   u-1/4-lap">
-                <div class="brand">
-                    Vadim Nilov
-                </div>
-            </div><!--
-         --><div class="hamburger  js-hamburger  layout__item  u-1/4-palm"><i class="mdi mdi-menu"></i></div><!--
-         --><div class="main-menu  js-main-menu  layout__item  u-2/3  u-1/1-palm  u-3/4-lap">
-                <ul class="list-inline">
-                    <li class="main-menu__item"><a href="#aboutMe" data-scroll>About me</a></li>
-                    <li class="main-menu__item"><a href="#workExperience" data-scroll>Work Experience</a></li>
-                    <li class="main-menu__item"><a href="#skills" data-scroll>Skills</a></li>
-                    <li class="main-menu__item"><a href="#follow" data-scroll>Follow me</a></li>
-                    <li class="main-menu__item"><a href="mailto:nilov.vadim@gmail.com">Hire me</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/header.php"?>
 <div class="">
     <div class="container">
         <div class="welcome-word" id="aboutMe">
@@ -749,46 +709,4 @@
         </p>
     </div>
 </div>
-<div class="any-questions" id="follow">
-    <div class="container">
-        If you have any questions &mdash; just ask me!
-        <ul>
-            <li><i class="mdi  mdi-email"></i><div><a href="mailto:nilov.vadim@gmail.com">mail</a> me</div></li>
-            <li><i class="mdi  mdi-linkedin-box"></i><div><a href="https://ru.linkedin.com/in/nilov" target="_blank">LinkedIn</a></div></li>
-            <li><i class="mdi  mdi-skype"></i><div>write or call me: v_nilov</div></li>
-            <li><i class="mdi  mdi-github-circle"></i><div>fork me on <a href="https://github.com/vnilov" target="_blank">GitHub</a></div></li>
-            <li><i class="mdi  mdi-stackoverflow"></i><div>my CV on <a href="http://careers.stackoverflow.com/cv/employer/290222" target="_blank">StackOverFlow</a></div></li>
-            <li><i class="mdi  mdi-facebook-box"></i><div>follow me on <a href="http://facebook.com/nilov.vadim" target="_blank">Facebook</a></div></li>
-        </ul>
-    </div>
-</div>
-<div class="footer">
-    <div class="container">
-        <div class="layout  layout--middle">
-            <div class="layout__item  u-2/3">&copy 2015 Nilov Vadim</div><!--
-          --><div class="layout__item  u-1/3  text--right">
-                <a href="/files/CV_VNilov_July2016.pdf" class="footer__link">My CV</a>
-            </div>
-        </div>
-    </div>
-</div>
-<script type="application/javascript" src="assets/bower_components/jquery/dist/jquery.min.js"></script>
-<script type="application/javascript" src="assets/bower_components/jquery-ui/ui/minified/core.min.js"></script>
-<script type="application/javascript" src="assets/bower_components/jquery-ui/ui/minified/widget.min.js"></script>
-<script type="application/javascript" src="assets/bower_components/jquery-ui/ui/minified/accordion.min.js"></script>
-<script type="application/javascript" src="assets/js/vendor/smooth-scroll.min.js"></script>
-<script type="application/javascript" src="assets/bower_components/headroom.js/dist/headroom.min.js"></script>
-<script type="application/javascript" src="assets/bower_components/headroom.js/dist/jQuery.headroom.min.js"></script>
-<script type="application/javascript" src="assets/js/src/app.js"></script>
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-67791338-1', 'auto');
-    ga('send', 'pageview');
-
-</script>
-</body>
-</html>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . "/footer.php"?>

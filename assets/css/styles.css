@@ -37,6 +37,12 @@ a, a:visited, a:hover, a:focus {
  * @requires {function} top-shadow
  * @requires {function} bottom-shadow
  */
+.hidden {
+  display: none !important; }
+
+.visible {
+  display: block !important; }
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -953,6 +959,29 @@ ul {
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   transform: translateY(-100%); }
+
+textarea {
+  width: 100%; }
+
+button:disabled {
+  opacity: 0.3;
+  color: grey; }
+
+input, textarea, button, label {
+  margin: 12px 0;
+  display: inline-block; }
+
+.form-group {
+  display: block; }
+
+.console {
+  width: 100%;
+  height: 120px;
+  font-size: 10px;
+  background-color: black;
+  color: lavenderblush;
+  padding: 10px;
+  overflow: auto; }
 
 /*------------------------------------*\
     #WIDTHS

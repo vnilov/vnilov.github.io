@@ -1,0 +1,14 @@
+textarea {
+  width: 100%;
+}
+button:disabled {
+  opacity: 0.3;
+  color: grey;
+}
+input, textarea, button, label {
+  margin: 12px 0;
+  display: inline-block;
+}
+.form-group {
+  display: block;
+}
