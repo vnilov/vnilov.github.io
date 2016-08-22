@@ -7,7 +7,7 @@ $(function () {
     var param1 = $('#additionalParam1');
     var param2 = $('#additionalParam2');
     var button = $('#sendRequest');
-    var method = "get";
+    var method = "GET";
     var id;
     var phrase;
 
@@ -29,13 +29,13 @@ $(function () {
         
         switch ($(this).val()) {
             case "update":
-                method = "POST";
+                method = "PUT";
                 break;
             case "delete":
                 method = "DELETE";
                 break;
             case "create":
-                method = "PUT";
+                method = "POST";
                 break;
             default:
                 method = "GET";
@@ -69,8 +69,9 @@ $(function () {
         if (id != undefined) {
             url += "/" + id;
         }
-        if (phrase != undefined && phrase.lenght > 0)
+        if (phrase != undefined && phrase.length > 0) {
             data = {"phrase": phrase};
+        }
         $.ajax({
             type: method,
             url: url,
@@ -79,6 +80,7 @@ $(function () {
             complete: function(data, textStatus, request){
                 write2Console(data.status + ' ' + data.statusText);
                 write2Response(data.responseJSON);
+                console.log(data);
             }
         });
     })
@@ -87,7 +89,8 @@ function write2Console(text) {
     var html = $('#console').html();
     $('#console').html(html + text + "<br>");
 }
-function write2Response(data) { 
+function write2Response(data) {
     var html = $('#response').html();
-    $('#response').html(html + data + "<br>");
+    if (data.error != undefined)
+        $('#response').html(data.error);
 }
