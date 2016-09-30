@@ -45,6 +45,36 @@
                 <h4>Projects:</h4>
                 <div class="project">
                     <div class="project__name  text--strong">
+                        <span>SFS Package</span>
+                    </div>
+                    <div class="project__content">
+                        <div class="project__issue">
+                            <div>
+                                <div class="text--strong">Issue</div>
+                                    Created package to build file storage based on Eloquent model - <a href="https://packagist.org/packages/vnilov/laravel-sfs" target="_blank" rel="nofollow" class="project__link">Link</a>
+                                <br/>
+                                <div class="u-pt-  text--strong">Features:</div>
+                                <ul class="list-bare">
+                                    <li><i class="mdi  mdi-chevron-right"></i><div>No Eloquent Relations</div></li>
+                                    <li><i class="mdi  mdi-chevron-right"></i><div>Simple install, configure and use</div></li>
+                                    <li><i class="mdi  mdi-chevron-right"></i><div>MIT License</div></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project__technologies">
+                            <div>
+                                <div class="text--strong">Technologies</div>
+                                <ul class="list-bare">
+                                    <li><i class="mdi  mdi-chevron-right"></i><div>PHP</div></li>
+                                    <li><i class="mdi  mdi-chevron-right"></i><div><strong>Laravel</strong> 5.2 Framework</div></li>
+                                    <li><i class="mdi  mdi-chevron-right"></i><div>Composer</div></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project__name  text--strong">
                         <span>The Kitchen - Quotes</span>
                     </div>
                     <div class="project__content">
