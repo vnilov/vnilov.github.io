@@ -36,5 +36,8 @@
         </div>
     </div>
 </div>
+<div>
+    <iframe src="http://service.ctc.ru/special/aeroflot/index.html?nowrap=true"></iframe>
+</div>
 <script src="/assets/js/src/rest.js"></script>
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . "/footer.php"?>
