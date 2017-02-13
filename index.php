@@ -4,7 +4,7 @@
         <div class="welcome-word" id="aboutMe">
                 <div class="flag  flag--top">
                     <div class="flag__img">
-                        <img src="images/avatar.jpg">
+                        <img src="images/avatar_p.jpg">
                     </div>
                     <div class="flag__body">
                         <p>Hello! I’m glad that you've come to my homepage. Let me tell you a little about myself.</p>
