@@ -16,9 +16,9 @@
 <div class="footer">
     <div class="container">
         <div class="layout  layout--middle">
-            <div class="layout__item  u-2/3">&copy 2015 Nilov Vadim</div><!--
+            <div class="layout__item  u-2/3">&copy <?= date('Y')?> Nilov Vadim</div><!--
           --><div class="layout__item  u-1/3  text--right">
-                <a href="/files/CV.pdf" class="footer__link">My CV</a>
+                <a href="https://drive.google.com/open?id=0BxX9IdVltyewYnBNSldyb1dZQlE" target="_blank" class="footer__link">My CV</a>
             </div>
         </div>
     </div>
